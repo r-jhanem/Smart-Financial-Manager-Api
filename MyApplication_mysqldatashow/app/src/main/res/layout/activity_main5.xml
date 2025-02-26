@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:visibility="gone"
+
+            android:id="@+id/liner_23"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName_Auot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="+"
+                android:textSize="24sp" />
+
+
+            <EditText
+                android:id="@+id/editTextTextPersonName4_branchess_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="24sp" />
+
+
+            <EditText
+                android:id="@+id/editTextTextPersonName_box_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="true"
+                android:inputType="textPersonName"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0097A7"
+                android:gravity="center"
+                android:text="البيانات الشخصية " />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/liner_22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bottomPersonName_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_date_range_24"
+                android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:onClick="add_date"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/ff_ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0097A7"
+                android:gravity="right"
+                android:text=" الاسم" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/ic_menu_info_details"
+                android:ems="10"
+                android:hint="الاسم"
+                android:inputType="textPersonName"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/ff_fs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0097A7"
+                android:gravity="right"
+                android:text=" التاريخ" />
+
+
+            <EditText
+                android:id="@+id/editTextTextPersonName_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_baseline_date_range_24"
+
+                android:ems="10"
+                android:hint="التاريخ"
+                android:inputType="textPersonName"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0097A7"
+                android:gravity="center"
+                android:text=" الهاتف " />
+
+            <EditText
+
+                android:id="@+id/editTextTextPersonName4_phone"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/ic_menu_call"
+                android:ems="10"
+                android:hint="رقم الهاتف"
+                android:inputType="textPersonName" />
+
+
+            <TextView
+                android:id="@+id/ff_ty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0097A7"
+                android:gravity="center"
+                android:rotation="8"
+                android:rotationY="-6"
+                android:text=" التفاصيل " />
+
+            <EditText
+
+
+                android:id="@+id/editTextTextPersonName_grest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/ic_lock_lock"
+                android:ems="10"
+                android:hint="التفاصل"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/liner_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/f9f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0097A7"
+                android:gravity="center"
+                android:text=" المبلغ " />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName6_sol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/ic_menu_mylocation"
+                android:ems="10"
+                android:hint="سقف المديونبة"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/f8f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0097A7"
+                android:gravity="center"
+                android:text="كلمة المرور" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName6_so_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/ic_menu_mylocation"
+                android:ems="10"
+                android:hint="كلمة المرور"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/liner_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="radioClick"
+                    android:text="مدير" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="radioClick"
+                    android:text="موظف" />
+            </RadioGroup>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|end"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_op2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="موافق" />
+
+            <Button
+                android:id="@+id/button2_op"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:onClick="Update_onclik"
+
+                android:text="الغاء" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

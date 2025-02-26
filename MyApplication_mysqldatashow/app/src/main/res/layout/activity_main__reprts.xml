@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+>
+
+
+
+
+
+    <ScrollView
+        android:id="@+id/svEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/etName"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:ems="10"
+                            android:hint="الاسم "
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+
+
+
+                        <EditText
+                            android:id="@+id/etNoTlp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:ems="10"
+                            android:hint="المبلغ"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerOne"
+                            android:layout_width="200dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown"
+                            android:visibility="gone"/>
+
+                        <EditText
+                            android:layout_toEndOf="@+id/itemSpinnerOne"
+                            android:id="@+id/etJmlOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_alignParentEnd="true"
+                            android:ems="10"
+                            android:hint="التفاصيل"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerTwo"
+                            android:layout_width="200dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown"
+                            android:visibility="gone"/>
+
+                        <EditText
+                            android:layout_toEndOf="@+id/itemSpinnerTwo"
+                            android:id="@+id/etJmlTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_alignParentEnd="true"
+                            android:ems="10"
+                            android:hint="Menu 2"
+                            android:maxLines="1"
+                            android:textSize="14sp" android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btnPrint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="30dp"
+                        android:onClick="add_log"
+                        android:text="ارسال"
+                     />
+
+                    <Button
+                        android:id="@+id/btnPrint2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="30dp"
+                        android:onClick="add_log_openpdf"
+                        android:text="ارسال" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

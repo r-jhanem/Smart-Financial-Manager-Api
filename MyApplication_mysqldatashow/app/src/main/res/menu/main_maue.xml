@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mune_refresh"
+        android:title="تحديث"
+        android:icon="@drawable/ic_baseline_refresh_24"
+        app:showAsAction="always"
+
+        />
+<item
+    android:id="@+id/mune_search"
+    android:title="search"
+
+
+    app:showAsAction="always"
+    app:actionViewClass="androidx.appcompat.widget.SearchView"
+    android:icon="@mipmap/ic_search_white_24dp"
+
+    />
+
+
+    <item
+        android:id="@+id/action_sort_by_types"
+        android:title="@android:string/selectTextMode"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_sort_by_type"
+        android:title="اضافة سجل جديد"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/giving_enter"
+        android:title="طلبات الدخول"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_sort_by_type_url"
+        android:title="اضافة سرفر جديد"
+        app:showAsAction="ifRoom"/>
+
+</menu>

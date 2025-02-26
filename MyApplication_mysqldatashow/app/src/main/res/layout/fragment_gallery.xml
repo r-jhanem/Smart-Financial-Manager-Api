@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.gallery.GalleryFragment">
+
+
+    <EditText
+        android:id="@+id/editText_tele"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TableLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="تاريخ العملية:"
+        android:inputType="number|text"
+        android:textSize="20dp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TableLayout1"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="اسم الزبون"
+        android:onClick="txt_serch"
+        android:textSize="17dp"
+        android:visibility="visible" />
+
+    <ListView
+        android:id="@+id/listView_show_2"
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:layout_width="match_parent"
+        android:layout_height="562dp"
+        android:layout_below="@+id/button_okop"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="0"
+        android:textFilterEnabled="true">
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/editText_inpnear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ditText_id"
+        android:layout_alignParentRight="true"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="تفاصيل العملية"
+        android:inputType="text"
+        android:textSize="20dp"
+        android:visibility="visible" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button_okop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_level"
+        android:layout_alignParentLeft="true"
+        android:background="?attr/homeAsUpIndicator"
+        android:onClick="but_okop"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editText_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_inpnear"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="المبلغ"
+        android:textSize="17dp"
+        android:visibility="visible"  />
+
+    <EditText
+        android:id="@+id/ditText_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_tele"
+        android:layout_alignLeft="@+id/editText_inpnear"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="اختار رقم الزبون من القائمة "
+        android:inputType="number"
+        android:textSize="23dp"
+        android:visibility="gone" />
+
+    <TableLayout
+        android:id="@+id/TableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="29dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:shrinkColumns="4">
+
+        <EditText
+            android:id="@+id/editText_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText_tele"
+            android:layout_alignLeft="@+id/editText_inpnear"
+            android:ems="10"
+            android:hint="اختار رقم الزبون من القائمة "
+            android:inputType="number"
+            android:textSize="23dp"
+            android:visibility="gone"  />
+    </TableLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_weight="1"
+        android:background="@color/teal_200"
+        android:fadeScrollbars="true"
+        android:gravity="bottom|end"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:tooltipText="raad"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="666dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_menu_delete"
+            android:onClick="delete_on"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_menu_edit"
+            android:onClick="but_updat"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_menu_add"
+            android:onClick="but_add"
+            tools:ignore="VectorDrawableCompat" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="70dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="60dp"
+        android:clickable="true"
+        android:foregroundGravity="center"
+        tools:ignore="VectorDrawableCompat" />
+
+
+
+</RelativeLayout>
+
+
+

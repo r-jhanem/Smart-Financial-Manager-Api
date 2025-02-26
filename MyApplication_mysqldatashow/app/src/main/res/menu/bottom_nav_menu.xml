@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_hom"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="الرئيسية"
+        app:showAsAction="withText"/>
+
+
+
+    <item
+        app:showAsAction="withText"
+        android:id="@+id/navigation_decoment"
+        android:icon="@drawable/reicept_24"
+        android:title="السندات"
+        />
+    <item
+
+        android:id="@+id/navigation_emple"
+        android:icon="@drawable/emple_24"
+        android:title="الحسابات"
+    app:showAsAction="always"
+    />
+
+
+
+
+
+
+
+
+</menu>

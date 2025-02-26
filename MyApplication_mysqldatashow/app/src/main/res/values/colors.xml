@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+    <color name="toolbar_color">#B0F484</color>
+    <color name="selector_card">#5B8064FD</color>
+
+    <color name="card_pressed">#A6B4F5CF</color>
+    <color name="btn_selected_color">#ebf4fc</color>
+    <color name="card_selected">#B4F5CF</color>
+</resources>

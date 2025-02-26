@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_home_black_24dp"
+                android:title="@string/menu_home" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_baseline_chat_24"
+                android:title="الشات" />
+            <item
+                android:id="@+id/nav_add_remove"
+                android:icon="@drawable/ic_baseline_sync_24"
+                android:title="تحديث" />
+            <item
+                android:id="@+id/nav_shopping_list"
+                android:icon="@drawable/ic_baseline_pin_drop_24"
+                android:title="المناطق" />
+            <item
+                android:id="@+id/nav_shopping_list_brann"
+                android:icon="@drawable/clusterchart2_bx_128x128"
+                android:title="الفروع" />
+            <item
+                android:id="@+id/nav_shopping_list_box"
+                android:icon="@drawable/decoment"
+                android:title="الصناديق" />
+            <item
+                android:id="@+id/nav_shopping_list_emp"
+                android:icon="@drawable/emple_24"
+                android:title="الحسابات" />
+
+            <item
+                android:id="@+id/nav_delete"
+                android:icon="@drawable/edit_icon"
+                android:title="تغير كلمة المرور" />
+
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/close_32"
+                android:title="تسجيل الخروج" />
+        </group>
+
+
+</menu>

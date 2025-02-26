@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    tools:context=".MainActivity4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0"
+                android:background="@color/purple_500"
+                android:foregroundGravity="center"
+                android:onClick="add_emp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#8BC34A"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/purple_500"
+                        android:foregroundGravity="center"
+                        android:onClick="add_emp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="40dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#8BC34A"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView_show_open_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="170dp"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/decoment" />
+
+                            <TextView
+                                android:id="@+id/textView_open_22"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="كشف حساب"
+                                android:textSize="36sp" />
+
+                            <Button
+                                android:id="@+id/bu_add_22"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="عرض"
+
+                                />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <ImageView
+                        android:id="@+id/imageView_show_open_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/emp" />
+
+                    <TextView
+                        android:id="@+id/textView_open_33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="الحسابات"
+                        android:textSize="36sp" />
+
+                    <Button
+                        android:id="@+id/bu_add_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="عرض"
+
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0"
+                android:background="@color/purple_500"
+                android:foregroundGravity="center"
+                android:onClick="add_emp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#8BC34A"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView_show_open"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/emp" />
+
+                    <TextView
+                        android:id="@+id/textView_open"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="كافة الحسابات"
+                        android:textSize="36sp" />
+
+                    <Button
+                        android:id="@+id/bu_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="عرض"
+
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/purple_500"
+                    android:foregroundGravity="center"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="40dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#8BC34A"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView_show_ope_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:background="@drawable/box"
+                            android:onClick="add_box"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/box" />
+
+                        <TextView
+                            android:id="@+id/textView_open_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="36sp"
+                            tools:text="ارصدة الصناديق" />
+
+                        <Button
+                            android:id="@+id/bu_ad_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="add_lo"
+                            android:text="Button"
+
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/purple_500"
+                    android:foregroundGravity="center"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="40dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#8BC34A"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView_show_ope_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/settt" />
+
+                        <TextView
+                            android:id="@+id/textView_open_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="الاعدادات"
+                            android:textSize="36sp" />
+
+                        <Button
+                            android:id="@+id/bu_ad_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="add_lo"
+                            android:text="Button"
+
+                            />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/purple_500"
+                    android:foregroundGravity="center"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="40dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#8BC34A"
+                        android:gravity="center"
+                        android:onClick="add_report"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView_show_ope_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:background="@drawable/report"
+                            android:scaleType="centerCrop" />
+
+                        <TextView
+                            android:id="@+id/textView_open_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="التقارير"
+                            android:textSize="36sp" />
+
+                        <Button
+                            android:id="@+id/bu_ad_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="add_lo"
+                            android:text="Button"
+
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/purple_500"
+                    android:foregroundGravity="center"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="40dp">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#8BC34A"
+                        android:gravity="center"
+                        android:onClick="add_decoment"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView_show_ope_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/decoment" />
+
+                        <TextView
+                            android:id="@+id/textView_open_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="السندات"
+                            android:textSize="36sp" />
+
+                        <Button
+                            android:id="@+id/bu_ad_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="add_lo"
+                            android:text="Button"
+
+                            />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
